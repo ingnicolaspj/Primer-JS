@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+:root{
+    --dark-blue:hsl(243,87%,12%);
+    --desaturated-blue:hsl(238,22%,44%);
+    --bright-blue:hsl(244,93%,58%);
+    --moderate-cyan:hsl(170,45%,43%);
+    --light-blue:hsl(240, 80%, 98%);
+    --light-gray:hsl(0,0%,43%);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero{
+    display: grid;
+    grid-template-rows: max-content 1fr;
+}
+
+.nav{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__main{
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero__img{
+    width: 100%;
+}
+
+.nav__link{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    color: var(--desaturated-blue);
+    margin-left: 40px;
+}
+
+.hero__title{
+    font-size: 2rem;
+    color: var(--dark-blue);
+    line-height: 1.5;
+}
+
+.hero__copy{
+    font-size: 1.2rem;
+    color: var(--desaturated-blue);
+    line-height: 1.5;
+    margin:20px 0;
+}
+
+.hero__contact{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap:20px
+}
+.hero__input{
+   font-family: 'Raleway', sans-serif;
+   padding: 18px;
+   text-align: center;
+   border-radius: 3px;
+   border: none;
+   border: 1px solid var(--desaturated-blue);
+   box-shadow: 0 3px 3px var(--light-gray);
+   outline:none;
+}
+
+.hero__btn{
+    background: var(--bright-blue);
+    color: var(--light-blue);
+    font-weight: 700;
+    padding: 0 60px;
+    border-radius: 3px;
+    border:none;
+    box-shadow: 0 3px 3px var(--light-gray);
+    cursor: pointer;
+}
+
+.hero__btn:hover{
+    opacity: 45%;
+}
+
